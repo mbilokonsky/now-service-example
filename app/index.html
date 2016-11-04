@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testing</title>
+</head>
+<body>
+This is the body of the static .html file. Below is the result of the JSON request to the API server:
+
+<pre id="result"></pre>
+
+<script type="text/javascript">
+  fetch('https://api.l3.wtf')
+  .then(function(res) {
+    return res.json();
+  })
+  .then(function(data) {
+    document.getElementById('result').innerText = JSON.stringify(data, null, 2);
+  })
+  .catch(function(e) {
+    console.error(e);
+  });
+
+
+</script>
+</body>
+</html>
