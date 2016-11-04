@@ -1,3 +1,5 @@
+See this running [here](http://app.l3.wtf).
+
 ## Simple Example with Client and Server
 Now can be used to host all kinds of stuff. In this example, we have a (very, very simple) front-end web application (consisting of a single index.html file), and we have a (very, very simple) back-end web server (consisting of a single `micro` instance).
 
